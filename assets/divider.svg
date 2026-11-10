@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 12" width="100%" role="img" aria-label="">
+  <defs>
+    <linearGradient id="n" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#00F5FF"/>
+      <stop offset="0.5" stop-color="#7B2FF7"/>
+      <stop offset="0.8" stop-color="#FF2E97"/>
+      <stop offset="1" stop-color="#FF2E97" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .hue { animation: hue 14s linear infinite; }
+    @keyframes hue { to { filter: hue-rotate(360deg); } }
+    .dot { animation: run 5s ease-in-out infinite alternate; }
+    @keyframes run { from { transform: translateX(240px); } to { transform: translateX(960px); } }
+  </style>
+  <g class="hue">
+    <rect y="5" width="1200" height="2" fill="url(#n)"/>
+    <circle class="dot" cy="6" r="4" fill="#FFFFFF"/>
+  </g>
+</svg>

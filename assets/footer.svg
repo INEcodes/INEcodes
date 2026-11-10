@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="100%" role="img" aria-label="End of transmission">
+  <defs>
+    <linearGradient id="n" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00F5FF"/>
+      <stop offset="0.5" stop-color="#7B2FF7"/>
+      <stop offset="1" stop-color="#FF2E97"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="1200" height="110" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .hue { animation: hue 14s linear infinite; }
+    @keyframes hue { to { filter: hue-rotate(360deg); } }
+    .w1 { animation: slide 9s linear infinite; }
+    .w2 { animation: slide 14s linear infinite reverse; }
+    @keyframes slide { to { transform: translateX(-600px); } }
+    .t { font: 500 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 5px; }
+  </style>
+  <g clip-path="url(#c)">
+    <rect width="1200" height="110" fill="#05060F"/>
+    <g class="hue">
+      <path class="w1" d="M0 70 Q150 30 300 70 T600 70 T900 70 T1200 70 T1500 70 T1800 70 V110 H0Z" fill="url(#n)" opacity="0.35"/>
+      <path class="w2" d="M0 82 Q150 52 300 82 T600 82 T900 82 T1200 82 T1500 82 T1800 82 V110 H0Z" fill="url(#n)" opacity="0.6"/>
+      <rect width="1200" height="4" fill="url(#n)"/>
+    </g>
+    <text x="600" y="42" text-anchor="middle" class="t" fill="#C9D6FF">END OF TRANSMISSION</text>
+  </g>
+</svg>
